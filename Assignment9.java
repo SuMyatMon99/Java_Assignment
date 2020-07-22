@@ -29,8 +29,8 @@ public class Assignment9 {
         System.out.println("Average value is : " + avg );
 		
         Arrays.sort(arr);
-        System.out.println("Minimum value is : " + arr[0]);
-        System.out.println("Maximum value is : " + arr[arr.length-1]);
+        System.out.println("Minimum value is : " + arr[0] + ", " + arr[1]);
+        System.out.println("Maximum value is : " + arr[arr.length-2] + ", " + arr[arr.length-1]);
 	}
 
 }
