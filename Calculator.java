@@ -5,36 +5,35 @@ public class Calculator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
-		String userInput1;
-		String userInput2;
+		int num1;
+		int num2;
 		String operator;
 		
 		System.out.print("Enter first number : " );
-		userInput1 = scanner.nextLine();
-		int num1=Integer.parseInt(userInput1);
+		num1 = scanner.nextInt();
 		
 		System.out.print("Enter second number : " );
-		userInput2 = scanner.nextLine();
-		int num2=Integer.parseInt(userInput2);
+		num2 = scanner.nextInt();
 		
 		System.out.print("Enter operator : " );
-		operator = scanner.nextLine();
-		char op = operator.charAt(0);
+		operator = scanner.next();
 		
-		switch(op) {
-			case '+' : System.out.println("The result is : " + (num1 + num2));
+		int result = 0;
+		switch(operator) {
+			case "+" : result = num1 + num2;
 				break;
-			case '-' : System.out.println("The result is : " + (num1 - num2));
+			case "-" : result = num1 - num2;
 				break;
-			case '*' : System.out.println("The result is : " + (num1 * num2));
+			case "*" : result = num1 * num2;
 				break;
-			case '/' : System.out.println("The result is : " + (num1 / num2));
+			case "/" : result = num1 / num2;
 				break;
-			case '%' : System.out.println("The result is : " + (num1 % num2));
+			case "%" : result = num1 % num2;
 				break;
 			default :
 				break;
 		}
+		System.out.println("The result is : " + result );
 	}
 
 }
