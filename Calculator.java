@@ -9,8 +9,7 @@ public class Calculator {
 		int num2;
 		String operator;
 		String str;
-		
-		do{
+
 		  System.out.print("Enter first number : " );
 	
 		  num1 = scanner.nextInt();
@@ -18,6 +17,7 @@ public class Calculator {
 		  System.out.print("Enter second number : " );
 		  num2 = scanner.nextInt();
 		
+		do{
 		  System.out.print("Enter operator : " );
 		  operator = scanner.next();
 		
