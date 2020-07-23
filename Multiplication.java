@@ -21,7 +21,7 @@ public class Multiplication {
 			}
 			System.out.println();
 		}
-		
+		in.close();
 	}
 
 }
