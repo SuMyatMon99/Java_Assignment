@@ -8,18 +8,21 @@ public class Calculator {
 		int num1;
 		int num2;
 		String operator;
+		String str;
 		
-		System.out.print("Enter first number : " );
-		num1 = scanner.nextInt();
+		do{
+		  System.out.print("Enter first number : " );
+	
+		  num1 = scanner.nextInt();
 		
-		System.out.print("Enter second number : " );
-		num2 = scanner.nextInt();
+		  System.out.print("Enter second number : " );
+		  num2 = scanner.nextInt();
 		
-		System.out.print("Enter operator : " );
-		operator = scanner.next();
+		  System.out.print("Enter operator : " );
+		  operator = scanner.next();
 		
-		int result = 0;
-		switch(operator) {
+		  int result = 0;
+		  switch(operator) {
 			case "+" : result = num1 + num2;
 				break;
 			case "-" : result = num1 - num2;
@@ -32,9 +35,15 @@ public class Calculator {
 				break;
 			default :
 				break;
-		}
-		System.out.println("The result is : " + result );
-		scanner.close();
-	}
+		 }	
+		 System.out.println("The result is : " + result );
+			
+		 System.out.print("Continue? [y/n]: ");
+	         str = scanner.next();
+	        
+	        }while(str != "n");
+		
+	         scanner.close();
+      }
 
 }
