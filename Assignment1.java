@@ -15,6 +15,8 @@ public class Assignment1 {
 		
 		String str1 = backAround(userInput);
 		System.out.print(str1);
+		
+		in.close();
 	}
 
 }
