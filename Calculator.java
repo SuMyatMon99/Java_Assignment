@@ -41,7 +41,7 @@ public class Calculator {
 		 System.out.print("Continue? [y/n]: ");
 	         str = scanner.next();
 	        
-	        }while(str != "n");
+	        }while(str.equals("y"));
 		
 	         scanner.close();
       }
